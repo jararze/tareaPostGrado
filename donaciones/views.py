@@ -11,9 +11,21 @@ class UsuarioViewSet(ModelViewSet):
     queryset = Usuario.objects.all()
     serializer_class = UsuarioSerializer
 
+# class CategoriaViewSet(ModelViewSet):
+#     queryset = Categoria.objects.all()
+#     serializer_class = CategoriaSerializer
+
 class CategoriaViewSet(ModelViewSet):
     queryset = Categoria.objects.all()
     serializer_class = CategoriaSerializer
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        nombre = self.request.query_params.get('nombre', None)
+        if nombre:
+            queryset = queryset.filter(nombre__icontains=nombre)
+        return queryset
+
 
 class ComentarioViewSet(ModelViewSet):
     queryset = Comentario.objects.all()

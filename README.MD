@@ -12,7 +12,12 @@ Este proyecto es una plataforma creada con Django y Django Rest Framework que pe
     - Validación personalizada: El monto debe ser mayor a 0 y la causa debe estar activa.
 
 3. Gestión de **Categorías**:
-    - Clasificar causas en categorías como "Educación", "Salud", etc.
+   - Clasificar causas en categorías como "Educación", "Salud", etc.
+   - **Nuevo**: Filtro para buscar categorías por nombre usando un parámetro de consulta en la API. Ejemplo de uso:
+     ```
+     /api/categorias?nombre=PALABRA_A_FILTRAR
+     ```
+     Permite realizar búsquedas dinámicas por nombre dentro del endpoint de categorías.
 
 4. Gestión de **Comentarios**:
     - Los usuarios pueden agregar comentarios a causas específicas.
@@ -33,7 +38,7 @@ Este proyecto es una plataforma creada con Django y Django Rest Framework que pe
 ### Endpoints de la API
 - **Causas**: `/api/causas/`
 - **Donaciones**: `/api/donaciones/`
-- **Categorías**: `/api/categorias/`
+- **Categorías**: `/api/categorias/` (Soporta el filtro `nombre`)
 - **Comentarios**: `/api/comentarios/`
 - **Usuarios**: `/api/usuarios/`
 - **Resumen de Donaciones**: `/api/resumen/`
