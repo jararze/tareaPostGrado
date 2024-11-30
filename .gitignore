@@ -1,0 +1,19 @@
+# Ignorar archivos y carpetas innecesarios
+
+# Python
+*.pyc
+__pycache__/
+
+# Entornos virtuales
+venv/
+
+# Base de datos local
+db.sqlite3
+
+# Configuración específica del sistema
+*.env
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Donaciones | Jorge Arze</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Navigation Bar -->
+<nav class="bg-blue-600 text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-lg font-bold">Plataforma de Donaciones Jorge Arze</h1>
+        <ul class="flex space-x-4">
+            <li><a href="/" class="hover:text-gray-200">Inicio</a></li>
+            <li><a href="/admin/" class="hover:text-gray-200">Administrador</a></li>
+            <li><a href="/api/" class="hover:text-gray-200">APIs</a></li>
+            <li><a href="/api/total_donaciones/" class="hover:text-gray-200">Total Donaciones</a></li>
+            <li><a href="/api/causas/" class="hover:text-gray-200">Causas</a></li>
+            <li><a href="/api/donaciones/" class="hover:text-gray-200">Donaciones</a></li>
+            <li><a href="/api/categorias/" class="hover:text-gray-200">Categorías</a></li>
+            <li><a href="/api/comentarios/" class="hover:text-gray-200">Comentarios</a></li>
+            <li><a href="/api/usuarios/" class="hover:text-gray-200">Usuarios</a></li>
+            <li><a href="/api/resumen/" class="hover:text-gray-200">Resumen</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="bg-blue-500 text-white">
+    <div class="container mx-auto px-4 py-20 text-center">
+        <h1 class="text-4xl font-bold mb-4">Bienvenido a la Plataforma de Donaciones</h1>
+        <p class="text-lg mb-6">Facilitamos la conexión entre causas sociales y personas solidarias. ¡Contribuye a hacer el mundo un lugar mejor!</p>
+        <a href="/api/causas/" class="bg-white text-blue-600 px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-gray-100">
+            Ver Causas
+        </a>
+        <a href="/api/donaciones/" class="bg-white text-blue-600 px-6 py-3 rounded-lg shadow-md font-semibold hover:bg-gray-100 ml-4">
+            Registrar Donación
+        </a>
+    </div>
+</header>
+
+<!-- Features Section -->
+<section class="container mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold text-center mb-8">¿Qué puedes hacer aquí?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">Causas Sociales</h3>
+            <p class="text-gray-600">Explora causas sociales que necesitan tu ayuda y contribuye a su éxito.</p>
+            <a href="/api/causas/" class="text-blue-600 hover:underline">Explorar causas</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">Donaciones Transparentes</h3>
+            <p class="text-gray-600">Cada donación es registrada y puedes ver cómo avanzan las causas.</p>
+            <a href="/api/resumen/" class="text-blue-600 hover:underline">Ver resumen</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">APIs Públicas</h3>
+            <p class="text-gray-600">Desarrolladores pueden utilizar nuestras APIs para integrar datos en sus aplicaciones.</p>
+            <a href="/api/" class="text-blue-600 hover:underline">Explorar APIs</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4 py-8 text-center">
+        <p class="text-sm">&copy; 2024 Plataforma de Donaciones. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
