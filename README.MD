@@ -47,7 +47,7 @@ Este proyecto es una plataforma creada con Django y Django Rest Framework que pe
 ## **Instalación**
 1. Clona el repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/jararze/tareaPostGrado.git
 2. Crea y activa un entorno virtual:
     ```bash
     python -m venv venv
